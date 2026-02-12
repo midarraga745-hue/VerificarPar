@@ -3,6 +3,9 @@
   <Folder Name="/NewFolder2/">
     <Project Path="TheGreatestNumber/TheGreatestNumber.csproj" Id="de428d64-466b-4ff4-b7a6-79b7b03a860e" />
   </Folder>
+  <Folder Name="/NewFolder3/">
+    <Project Path="OrderingOfThreeNumbers/OrderingOfThreeNumbers.csproj" Id="19a681b3-0be2-424c-88bf-d9e2d8073d29" />
+  </Folder>
   <Folder Name="/Shared/">
     <Project Path="Shared/Shared.csproj" Id="130c4560-d77e-4ce8-ad48-f5d6e6130c05" />
   </Folder>
