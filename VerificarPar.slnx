@@ -1,3 +1,10 @@
 <Solution>
+  <Folder Name="/NewFolder1/" />
+  <Folder Name="/NewFolder2/">
+    <Project Path="TheGreatestNumber/TheGreatestNumber.csproj" Id="de428d64-466b-4ff4-b7a6-79b7b03a860e" />
+  </Folder>
+  <Folder Name="/Shared/">
+    <Project Path="Shared/Shared.csproj" Id="130c4560-d77e-4ce8-ad48-f5d6e6130c05" />
+  </Folder>
   <Project Path="VerificarPar/VerificarPar.csproj" />
 </Solution>
