@@ -1,0 +1,31 @@
+﻿using Shared;
+
+var aswer = string.Empty;
+var options = new List<string> { "s", "n }" };
+
+
+do
+{
+    var name = ConsoleExtension.GetString("Ingrese nombre......................:");
+    var workHours = ConsoleExtension.GetFloat("Ingrese numero de horas trabajadas..:");
+    var hourValue = ConsoleExtension.GetDecimal("Ingrese valor hora..................:");
+    var salaryMinimun = ConsoleExtension.GetDecimal("Ingrese valor dalario minimo mensual:");
+
+    var salary = (decimal)workHours * hourValue;
+    if (salary < salaryMinimun)
+    {
+        Console.WriteLine($"Nombre.................: {name}");
+        Console.WriteLine($"Salario................: {salaryMinimun:C2}");
+    }
+    else
+    {
+        Console.WriteLine($"Nombre.................: {name}");
+        Console.WriteLine($"Salario................: {salary:C2}");
+    }
+    do
+    {
+        aswer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o?: ", options);
+    } while (!options.Any(x => x.Equals(aswer, StringComparison.CurrentCultureIgnoreCase)));
+} while (aswer!.Equals("s", StringComparison.CurrentCultureIgnoreCase)) ;
+
+    Console.WriteLine("Game Over.");

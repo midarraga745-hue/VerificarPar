@@ -11,7 +11,7 @@ do
     var c = ConsoleExtension.GetInt("Ingrese tercero numero: ");
 
     if (a > b && a > c)
-            {
+    { 
         Console.WriteLine($"El numero {a} es el mayor");
     }
     else if (b > a && b > c)
