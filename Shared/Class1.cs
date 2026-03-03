@@ -1,6 +1,7 @@
 ﻿namespace Shared;
 
-public static class ConsoleExtension
+
+public class ConsoleExtension
 {
     public static int GetInt(string message)
     {
@@ -13,6 +14,7 @@ public static class ConsoleExtension
 
         return 0;
     }
+
     public static float GetFloat(string message)
     {
         Console.Write(message);
@@ -20,6 +22,18 @@ public static class ConsoleExtension
         if (float.TryParse(numberString, out float numberFloat))
         {
             return numberFloat;
+        }
+
+        return 0;
+    }
+
+    public static double GetDouble(string message)
+    {
+        Console.Write(message);
+        var numberString = Console.ReadLine();
+        if (double.TryParse(numberString, out double numberDouble))
+        {
+            return numberDouble;
         }
 
         return 0;
@@ -40,11 +54,9 @@ public static class ConsoleExtension
     public static string? GetString(string message)
     {
         Console.Write(message);
-        var text = Console.ReadLine();    
+        var text = Console.ReadLine();
         return text;
     }
-
-    
 
     public static string? GetValidOptions(string message, List<string> options)
     {
@@ -56,4 +68,7 @@ public static class ConsoleExtension
         }
         return null;
     }
+
 }
+
+
